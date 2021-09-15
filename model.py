@@ -32,7 +32,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_
 
 # the model
 model = Sequential()
-model.add(Dense(input_dim=17, activation="relu", units=128, kernel_initializer="uniform"))
+model.add(Dense(input_dim=17, activation="relu", units=64, kernel_initializer="uniform"))
 model.add(Dense(activation="relu", units=64, kernel_initializer="uniform"))
 model.add(Dense(activation="relu", units=64, kernel_initializer="uniform"))
 model.add(Dense(activation="relu", units=32, kernel_initializer="uniform"))
